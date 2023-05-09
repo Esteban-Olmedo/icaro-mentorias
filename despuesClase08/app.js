@@ -20,18 +20,18 @@ const hay5 = (array) => {
 
 
 // c. Una función que reciba un array y un número, la cual debe retornar un array con todos los elementos mayores o iguales a dicho número.
-const unNumero = 101
+//const unNumero = 101
 const mayorAlnumero = (array, unNumero) => {
     return array.filter((numeros) => numeros >= unNumero)
 }
-//console.log(mayorAlnumero(array, unNumero))
+//console.log(mayorAlnumero(array, 101))
 
 // d. Por último, una función que reciba un array y un número. Dicha función, debe retornar true en caso de que el número se encuentre en el array y false en caso contrario.
 
 const ultimo = (array, unNumero) => {
     return array.includes(unNumero)
 }
-// console.log(ultimo(array, unNumero))
+ //console.log(ultimo(array, 101))
 
 // 2. Vamos a trabajar un poco con objetos, para este ejercicio usaremos un objeto de esta forma:
 
@@ -45,16 +45,17 @@ const usuario = {
 
 const validarEdad = (usuario) => {
     if (usuario.edad >= 18)
-        return "Hola " + usuario.nombre + " " + usuario.apellido + " sos mayor"
+        return `Hola ${usuario.nombre} ${usuario.apellido} sos mayor de edad`;
+        //return "Hola " + usuario.nombre + " " + usuario.apellido + " sos mayor"
         return "Hola " + usuario.nombre + " " + usuario.apellido + " sos menor"  
 }
-// console.log(validarEdad(usuario))
+console.log(validarEdad(usuario))
 
 // b. Ahora crearemos una función que reciba un usuario y un curso, y retorne el usuario con el nuevo curso. Por ejemplo si recibimos al usuario del ejemplo y el curso de “Introducción a las bases de datos”, la función debe retornar:
-const nuevoCurso = "intro"
+//const nuevoCurso = "intro"
 const usuarioNuevoCurso = (usuario, nuevoCurso) => {
     usuario.cursos.push(nuevoCurso)
     return usuario
 }
-console.log(usuarioNuevoCurso(usuario, nuevoCurso))
+//console.log(usuarioNuevoCurso(usuario, "intro 2"))
 
